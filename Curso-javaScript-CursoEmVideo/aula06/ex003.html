@@ -29,8 +29,11 @@
     <!-- Comentario em html-->
 
     <script>
-        var n1 = window.prompt('Digite um numero: ');
-        var n2 = window.prompt('Digite outro número: ');
+        var n1 = Number(window.prompt('Digite um numero: '));
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '));
+        var soma = n1 + n2;
+
+        window.alert('A soma de ' +n1 + ' + ' + n2 + ' é ' + soma);
     </script>
     
 </body>
