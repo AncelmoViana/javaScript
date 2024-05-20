@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indentificador Impar Par</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 2em;
+            background-color: lightblue;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            
+        }
+       
+    </style>
+</head>
+<body>
+
+    <h1>Indentificador <br> par ou impar</h1>
+
+    <script>
+        n1 = Number(window.prompt('Digite um Número: '));
+
+        if(n1 % 2 == 0){
+            document.write('\n \n ' + n1 + ' é um número par.');
+        }
+        else{
+            document.write(`${n1} é um número impar.`)
+        }
+    </script>
+    
+</body>
+</html>
