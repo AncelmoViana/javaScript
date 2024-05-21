@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jogo de adivinhar número</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2em;
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Adivinhacão de números</h1>
+
+    <button id = 'jogar'>jogar</button>
+    
+
+    <script>
+
+        const botao = document.getElementById("jogar");
+        botao.addEventListener("click", jogo);
+
+        function jogo(){
+            var n1 = Math.floor(Math.random() * 5)
+        
+        var n2 = Number(window.prompt('Digite um numero de 0 a 5: '));
+
+        var venceu = 0;
+        var perdeu = 0;
+
+        if(n2 === n1){
+            document.write(`Parabéns! Você Ganhou :)<br> `);
+            document.write(`Número gerado = ${n1}<br>Número que você digitou = ${n2}`);
+
+            venceu ++;
+           
+            
+        }
+        else{
+            document.write('Que pena! Você perdeu:/<br>');
+            document.write(`Número gerado = ${n1}<br>Número que você digitou = ${n2}`);
+            perdeu ++;
+        }
+
+        document.write(`<br><br>VENCEU = ${venceu}       PERDEU = ${perdeu}`);
+
+        }
+
+        
+    </script>
+</body>
+</html>
