@@ -16,27 +16,35 @@
 <body>
     <h1>Jogo de Adivinhacão de números</h1>
 
-    <button id = 'jogar'>jogar</button>
+  
     
 
     <script>
 
-        const botao = document.getElementById("jogar");
-        botao.addEventListener("click", jogo);
+    
+       
 
-        function jogo(){
+        var vidas = 5;
+
+       
+
+        while (vidas > 0){
             var n1 = Math.floor(Math.random() * 5)
-        
-        var n2 = Number(window.prompt('Digite um numero de 0 a 5: '));
+
+            var n2 = Number(window.prompt('Digite um numero de 0 a 5: '));
+
 
         var venceu = 0;
         var perdeu = 0;
+
+           
 
         if(n2 === n1){
             document.write(`Parabéns! Você Ganhou :)<br> `);
             document.write(`Número gerado = ${n1}<br>Número que você digitou = ${n2}`);
 
             venceu ++;
+            document.write(`<br><br>VENCEU = ${venceu}  PERDEU = ${perdeu}`);
            
             
         }
@@ -44,11 +52,17 @@
             document.write('Que pena! Você perdeu:/<br>');
             document.write(`Número gerado = ${n1}<br>Número que você digitou = ${n2}`);
             perdeu ++;
+            vidas --;
+            document.write(`<br><br>VENCEU = ${venceu}  PERDEU = ${perdeu}`);
         }
 
-        document.write(`<br><br>VENCEU = ${venceu}       PERDEU = ${perdeu}`);
+            
 
         }
+        
+        
+
+        
 
         
     </script>
