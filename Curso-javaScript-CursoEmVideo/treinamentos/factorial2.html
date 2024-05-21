@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            min-height: 150px;
+            
+            font-family: cursive;
+            font-size: 3em;
+            text-align: center;
+            background-color: rgb(28, 27, 27);
+            color: white;
+            box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.237);
+        }
+            
+        
+        h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            
+        }
+        script{
+            text-align: center;
+        }
+        main{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 2em;
+            background-color: lightblue;
+            padding: 30px;
+            min-width: 320px;
+            max-width: 750px;
+            margin: auto;
+            border-radius: 0px 0px 10px 10px;
+            box-shadow: 1px 4px 3px  rgba(0, 0, 0, 0.313);
+        }
+       
+    </style>
+</head>
+<body>
+    <header><h1>factorial</h1></header>
+
+    <main>
+        <script>
+            var n1 = Number(window.prompt('Digite um número: '));
+            var resultado;
+            var n2;
+            n2 = n1;
+
+            document.write('Número digitado '+ n1 +'<br><br>')
+
+            for(i=n1-1; i>=1; i-- ){
+                resultado = n1 * i;
+                document.write(`<br>${n1} X ${i} + ${resultado}`);
+
+                n1 = resultado;
+            }
+           
+            document.write(`<br><br>O factorial de ${n2} é ${resultado}`);
+
+            
+        </script>
+      
+    </main>
+    
+</body>
+</html>
