@@ -15,13 +15,25 @@
 <body>
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usao o <strong>Dom</strong> em javaScript</p>
-    <div>Clique em mim</div>
+    <p>Aprendendo a usar o <strong>Dom</strong> em javaScript</p>
+    <div id="msg">Clique em mim</div>
 
 
 
     <script>
-         window.document.write(window.document.URL)
+         
+         var  p1 = window.document.getElementsByTagName('p')[0];
+
+         var corpo = window.document.body;
+
+         var d = window.document.querySelectorAll('div#msg')[0];
+
+         d.innerText = 'Estou aguardando! ...';
+
+
+         window.document.write('<br><br>Escrito assim: ' + p1.innerText);
+         window.document.write('<br><br>' + d.innerHTML);
+        
     </script>
     
     
