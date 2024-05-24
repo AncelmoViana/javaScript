@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+    <style>
+        div#res{
+            position: absolute;
+            top: 117px;
+            left: 125px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">Km/h
+    
+    <input type="button" value="Verificar" onclick="calcular()">
+    
+    <p>Velocidade Atual: </p><div id="res">50km</div>
+
+    <div id="nota"></div>
+
+    <script>
+       
+
+        function calcular(){
+            var txtvel = window.document.getElementById('txtvel');
+            var res = window.document.querySelector('div#res');
+            var nota = window.document.querySelector('div#nota');
+
+            var vel = Number(txtvel.value);
+           
+
+            res.innerHTML = `<strong>${vel} km/h</strong>`;
+            nota.innerHTML += '<p> Dirija sempre com o cinto de segurança</p>';
+    
+
+            if(vel > 60){
+                nota.innerHTML = '<p>Você está MULTADO por excesso de velocidade</p>';
+
+                res.style.color = 'red';
+    
+            }
+            else if (vel >= 30 && vel <= 59){
+                nota.innerHTML += 'PARABÈNS Voce está na velocidade correta!'
+
+                res.style.color = 'blue';
+            }
+            else{
+                nota.innerHTML += `<p>Voce está abaixo da velocidade minima permitida, por favor aumente a velocidade.</p>`
+
+                res.style.color = 'yellow';
+
+
+            }
+
+
+        }
+    </script>
+</body>
+</html>
