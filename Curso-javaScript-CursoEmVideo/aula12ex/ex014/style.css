@@ -21,6 +21,15 @@ section{
     
 
 }
+img#imagem{
+    display: block;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    
+  
+}
 footer{
     color: white;
     text-align: center;
