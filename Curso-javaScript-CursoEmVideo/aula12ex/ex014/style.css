@@ -3,6 +3,7 @@
 body{
     background-color: rgb(70  , 142, 236);
     font: normal 15pt arial;
+  
 }
 
 header{
@@ -19,16 +20,17 @@ section{
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.336);
     
-
 }
+
 img#imagem{
-    display: block;
-    margin: auto;
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    
-  
+}
+
+div{
+    text-align: center;
+    padding: 8px;
 }
 footer{
     color: white;
