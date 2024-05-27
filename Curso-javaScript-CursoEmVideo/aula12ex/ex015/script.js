@@ -3,11 +3,19 @@ function verificar(){
     var ano = data.getFullYear();
     var fano = document.getElementById('txtano');
     var res = document.getElementById('res');
+    
 
 
     
     if(fano.value.length == 0 || Number(fano.value) > ano){
-        alert("erro")
+        if(fano.value.length == 0){
+           alert('Ano de Nascimento VAZIO!\nPor favor tente novamente');
+        }
+        else{
+            alert(`Ano Maior que ${ano}!\nPor favor tente novamente`);
+        }
+        
+        
     }
     else{
         var fsex = document.getElementsByName('radsex');
