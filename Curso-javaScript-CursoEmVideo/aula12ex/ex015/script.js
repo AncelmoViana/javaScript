@@ -3,6 +3,8 @@ function verificar(){
     var ano = data.getFullYear();
     var fano = document.getElementById('txtano');
     var res = document.getElementById('res');
+
+
     
     if(fano.value.length == 0 || Number(fano.value) > ano){
         alert("erro")
@@ -16,7 +18,12 @@ function verificar(){
         var genero = '';
 
         var img = document.createElement('img');
-        img.setAttribute('id', 'foto')
+        img.setAttribute('id', 'foto');
+
+        img.style.borderRadius = '50%';
+        img.style.width = '300px';
+        img.style.height = '250px';
+        img.style.padding = '10px';
 
         
 
@@ -35,7 +42,7 @@ function verificar(){
             }
             else if(idade < 50){
                 //adulto
-                img.setAttribute('src', 'imagens/HomemAdulto.jpg');
+                img.setAttribute('src', 'imagens/HomemAduto.jpg');
 
             }
             else{
