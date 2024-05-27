@@ -15,6 +15,5 @@ n = 1;
 
 do{
     console.log(n, 'Oi Tudo Bem?');
-    n++
 }
 while(n <= 10);
