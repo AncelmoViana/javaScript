@@ -37,17 +37,18 @@ div{
     
 }
 #saudacao{
-    width: 400px;
-    height: 80px;
-    background-color: rgba(0, 0, 0, 0.336);
+    width: 290px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.333);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.7em;
+    font-size: 2em;
     font-weight: bold;
     position: absolute;
     top: 5px;
-    color: white;
-    padding: 10px;
-    border-radius: 6px;
+    color: #022b73;
+    padding: 30px;
+    border-radius: 10px;
+  
     
 }
 #txtdia::after, #txtmes::after{
@@ -58,7 +59,7 @@ div{
 #txtsaudacao{
     position: absolute;
     top: -2px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 
