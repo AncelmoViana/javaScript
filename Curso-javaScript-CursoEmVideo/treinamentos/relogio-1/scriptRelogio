@@ -24,6 +24,7 @@ const  relogio = setInterval(function time(){
     var segundo = agora.getSeconds();
 
 
+
     txtsaudacao.innerHTML = 'Bom dia <br>'
     txtdia.innerHTML = `Hoje é ${dia}`;
     txtmes.innerHTML = mes;
