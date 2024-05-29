@@ -28,7 +28,7 @@ span#hora::after, span#minutos::after{
 }
 span{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10em;
+    font-size: 6em;
     color: black;
     text-shadow: 2px 3px 4px rgba(0, 0, 255, 0.386);
 }
@@ -38,7 +38,7 @@ span#segundos{
 }
 @media(width: 450px){
     span{
-        font-size: 6em;
+        font-size: 4em;
     }
 }
 
