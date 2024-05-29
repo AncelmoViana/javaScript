@@ -39,13 +39,13 @@ div{
 #saudacao{
     width: 290px;
     height: 60px;
-    background-color: rgba(255, 255, 255, 0.333);
+    background-color: rgba(0, 0, 0, 0.515);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2em;
     font-weight: bold;
     position: absolute;
     top: 5px;
-    color: #022b73;
+    color: #b2f742;
     padding: 30px;
     border-radius: 10px;
   
