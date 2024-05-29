@@ -2,28 +2,63 @@
 var textohora = document.getElementById('hora');
 var textominuto = document.getElementById('minutos');
 var textosegundo = document.getElementById('segundos');
+var txtdia = document.getElementById('txtdia');
+var txtmes = document.getElementById('txtmes');
+var txtano = document.getElementById('txtano');
+var txtsaudacao = document.getElementById('txtsaudacao');
 
 
-const  relogio = setInterval(function time(){
+    
 
    
 
+
+const  relogio = setInterval(function time(){
     var agora = new Date();
+    var dia = agora.getDate();
+    var mes = agora.getMonth() + 1;
+    var ano = agora.getFullYear();
 
     var hora = agora.getHours();
     var minuto = agora.getMinutes();
     var segundo = agora.getSeconds();
 
-    
+
+    txtsaudacao.innerHTML = 'Bom dia <br>'
+    txtdia.innerHTML = `Hoje é ${dia}`;
+    txtmes.innerHTML = mes;
+    txtano.innerHTML = ano;
 
 
     textohora.innerHTML = hora;
     textominuto.innerHTML = minuto;
     textosegundo.innerHTML = segundo;
+  
+
+    if(dia < 10){txtdia.innerHTML = `0${dia } `}
+    if(mes < 10){txtmes.innerHTML = `0${mes} `}
    
 
     if(hora < 10){textohora.innerHTML = `0${hora}`}
     if(minuto < 10){textominuto.innerHTML = `0${minuto}`}
     if(segundo < 10){textosegundo.innerHTML = `0${segundo}`}
+
+    if(hora >= 0 && hora <= 6){
+        txtsaudacao.innerText =' Boa Madrugada!';
+
+    }
+    else if(hora > 6 && hora <= 12){
+        txtsaudacao.innerText =' Bom Dia!';
+
+    }
+    else if(hora > 12 && hora <= 18){
+        txtsaudacao.innerText =' Boa Tarde!';
+
+    }
+    else{
+        txtsaudacao.innerText =' Boa Noite!';
+    }
+
+   
 
 })

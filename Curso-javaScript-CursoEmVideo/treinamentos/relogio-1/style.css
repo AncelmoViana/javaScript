@@ -21,7 +21,8 @@ div{
     width: 500px;
 }
 
-span{
+#hora, #minutos, #segundos{
+    
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6em;
@@ -34,6 +35,29 @@ span{
     background-color: rgba(0, 0, 0, 0.559);
     border-radius: 10px;
     
+}
+#saudacao{
+    width: 400px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.336);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    position: absolute;
+    top: 60px;
+    color: #c3dcfa;
+    padding: 10px;
+    border-radius: 6px;
+    
+}
+#txtdia::after, #txtmes::after{
+    content: '/';
+
+
+}
+#txtsaudacao{
+    position: absolute;
+    top: 5px;
+    padding-bottom: 30px;
 }
 
 
