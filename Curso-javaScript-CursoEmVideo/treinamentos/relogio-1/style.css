@@ -3,7 +3,7 @@
 body{
     margin: 0;
     background-image: url(planeta-terra.jpg);
-    background-position: center top;
+    background-position: cover;
     height: 100vh;
     display: flex;
     align-items: center;
