@@ -44,7 +44,7 @@ div{
     font-size: 1.7em;
     font-weight: bold;
     position: absolute;
-    top: 60px;
+    top: 5px;
     color: white;
     padding: 10px;
     border-radius: 6px;
@@ -57,7 +57,7 @@ div{
 }
 #txtsaudacao{
     position: absolute;
-    top: 5px;
+    top: -2px;
     padding-bottom: 30px;
 }
 
