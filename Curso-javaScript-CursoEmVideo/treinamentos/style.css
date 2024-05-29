@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root{
+    --corbody: #C0C0C0;
+    --cormain: #F8F8FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--corbody)
+}
+main{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    width: 320px;
+    
+}
+button{
+
+    display: flex;
+    
+    font-size: 3em;
+    width: 200px;
+    height: 150px;
+}
