@@ -29,36 +29,17 @@ span{
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6em;
-    color: white;
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.386);
 }
 
 
 span#segundos{
-    color: white;
-}
-
-
-   
-    
-
-p{
     position: absolute;
-    display: flex;
-    font-size: 0.9em;
-    justify-content: center;
-    text-align: center;
-    max-width: 180px;
-    left: 45%;
-    top: 5%;
-    font-style: italic;
-    color: white;
-}
-#psegundos{
+    color: black;
+    left: 50%;
     top: 60%;
-        
-    
 }
-
 
 @media(with: 450px){
     span{
