@@ -30,9 +30,14 @@ span{
     
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6em;
+    font-size: 10em;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.386);
+}
+@media(width: 450px){
+    span{
+        font-size: 6em;
+    }
 }
 
 
