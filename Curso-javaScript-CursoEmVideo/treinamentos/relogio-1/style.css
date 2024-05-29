@@ -1,0 +1,41 @@
+@charset "UTF-*";
+
+body{
+    max-width: 800px;
+    min-width: 320px;
+    background-image: url(planeta-terra.jpg);
+    
+    
+}
+div{
+    position: absolute;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+    padding-left: 25%;
+    font-size: 8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+span#hora::after, span#minutos::after{
+    content: ':';
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+span#hora{
+    color: #6e8ecaec;
+}
+span#minutos{
+    color: #8aacebec;
+
+}
+span#segundos{
+    color: #a1bddf;
+
+}
+p{
+    left: 45%;
+    position: absolute;
+    font-style: italic;
+    color: white;
+}
