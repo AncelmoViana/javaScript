@@ -10,11 +10,12 @@ div{
     max-width: 800px;
     min-width: 320px;
     position: absolute;
+    align-items: center;
     text-align: center;
     color: white;
-    padding-top: 80px;
-    padding-left: 25%;
-    font-size: 8em;
+    padding-top: 50px;
+    padding-left: 30%;
+    font-size: 6em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
