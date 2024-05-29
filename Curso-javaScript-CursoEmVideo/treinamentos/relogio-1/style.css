@@ -27,22 +27,19 @@ span#hora::after{
     padding-left: 20px;
     font-size: 1.2em;
 }
-span#hora{
-    color: #6e8ecaec;
-}
-span#minutos{
-    color: #8aacebec;
-
+span{
+    color: white;
 }
 span#segundos{
-    color: #4588db;
-
+    color: rgba(173, 163, 163, 0.938);
 }
 p#psegundos{
     position: absolute;
     top: 30px;
+    
 }
 p{
+    font-size: 0.9em;
     position: absolute;
     text-align: center;
     max-width: 180px;
