@@ -27,12 +27,14 @@ span#hora::after, span#minutos::after{
     font-size: 1.2em;
 }
 span{
-    
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 10em;
     color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.386);
+    text-shadow: 2px 3px 4px rgba(0, 0, 255, 0.386);
+}
+span#segundos{
+    text-shadow: 2px 3px 4px rgba(255, 255, 255, 0.363);
+
 }
 @media(width: 450px){
     span{
