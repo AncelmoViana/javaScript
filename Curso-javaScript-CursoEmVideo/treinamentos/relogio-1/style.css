@@ -3,7 +3,7 @@
 body{
     margin: 0;
     background-image: url(planeta-terra.jpg);
-    background-position: cover;
+    background-position: center center;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ div{
   width: 500px;
   background-color: transparent;
 }
-span#hora::after{
+span#hora::after, span#minutos::after{
     content: ':';
     padding: 20px;
     font-size: 1.2em;
@@ -28,18 +28,11 @@ span{
     
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6em;
+    font-size: 9em;
     color: black;
     text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.386);
 }
 
-
-span#segundos{
-    position: absolute;
-    color: black;
-    left: 50%;
-    top: 60%;
-}
 
 @media(with: 450px){
     span{
