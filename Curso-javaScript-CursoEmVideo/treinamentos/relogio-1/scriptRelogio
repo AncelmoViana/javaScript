@@ -44,15 +44,15 @@ const  relogio = setInterval(function time(){
     if(minuto < 10){textominuto.innerHTML = `0${minuto}`}
     if(segundo < 10){textosegundo.innerHTML = `0${segundo}`}
 
-    if(hora >= 0 && hora <= 6){
+    if(hora >= 0 && hora < 6){
         txtsaudacao.innerText =' Boa Madrugada!';
 
     }
-    else if(hora > 6 && hora <= 12){
+    else if(hora >= 6 && hora < 12){
         txtsaudacao.innerText =' Bom Dia!';
 
     }
-    else if(hora > 12 && hora < 18){
+    else if(hora >= 12 && hora < 18){
         txtsaudacao.innerText =' Boa Tarde!';
 
     }
