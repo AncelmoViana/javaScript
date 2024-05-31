@@ -49,11 +49,13 @@ div{
     padding: 30px;
     border-radius: 10px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.616);
+    text-shadow: 2px 3px 4px rgba(0, 0, 255, 0.386);
   
     
 }
 #txtdia::after, #txtmes::after{
     content: '/';
+    text-shadow: 2px 3px 4px rgba(0, 0, 255, 0.386);
 
 
 }
@@ -61,6 +63,7 @@ div{
     position: absolute;
     top: -2px;
     padding-bottom: 20px;
+    
 }
 
 
