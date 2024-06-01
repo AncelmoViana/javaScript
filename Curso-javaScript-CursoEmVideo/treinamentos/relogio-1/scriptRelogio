@@ -50,6 +50,7 @@ const  relogio = setInterval(function time(){
     }
     else if(hora >= 6 && hora < 12){
         txtsaudacao.innerText =' Bom Dia!';
+    
 
     }
     else if(hora >= 12 && hora < 18){
