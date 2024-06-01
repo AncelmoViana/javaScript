@@ -25,8 +25,8 @@ const  relogio = setInterval(function time(){
 
 
 
-    txtsaudacao.innerHTML = 'Bom dia <br>'
-    txtdia.innerHTML = `Hoje é ${dia}`;
+    
+    txtdia.innerHTML = dia;
     txtmes.innerHTML = mes;
     txtano.innerHTML = ano;
 
