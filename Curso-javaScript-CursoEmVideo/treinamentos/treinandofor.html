@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinando comando for</title>
+    <style>
+        #resultados{
+           border: 1px solid black;
+           width:30%;
+        }
+        #resultado{
+            display: inline-block;
+        }
+    </style>
+    
+</head>
+<body>
+    <div>
+        <p>Digite um número: <input type="number" name="n1" id="n1"></p>
+        <p> <input type="button" value="enviar" onclick="enviar()"> </p>
+
+        <div id="resultados">
+            <div id="resultado"></div>
+        </div>
+    </div>
+
+    <script>
+        function enviar(){
+            txtn1 = document.getElementById('n1');
+            resultado = document.getElementById('resultado');
+
+            n1 = Number(txtn1.value);
+            n2 = n1 + 50;
+   
+            for(i = n1; i < n2; i++){
+
+                resultado.innerHTML += `${i} \n`;
+            
+
+            }
+
+        }
+       
+    </script>
+    
+</body>
+</html>
