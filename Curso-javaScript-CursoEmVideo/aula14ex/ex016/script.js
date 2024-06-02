@@ -14,23 +14,29 @@ function contar(){
         resultado.innerHTML = 'Impossivel contar!'
     }
     else if(passo == 0){
+
         alert('Passo Inválido! Considerando passo 1');
+
+        passo = 1;
+        contando();
+    }
+    else if(fim < inicio){
+        alert('Valor de inicio maior que valor de fim! Tente novamente');
     }
     else{
-        contando();
+        contando()
+         
 
     }
 
 
 
     function contando(){
-        for(i=0; i <= 10; i++){
-            resultado.innerHTML = i;
+        for(let c = inicio; c <= fim; c += passo){
+            resultado.innerHTML += `${c} \u{1f449}`;
 
-         
-            
-            
-        }
+         }
+         resultado.innerHTML += `\u{1f3c1}`
     }
 
     
