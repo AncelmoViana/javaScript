@@ -1,18 +1,21 @@
-function relogio(){
-    var txtsegundo = document.getElementById('segundo');
-    var txtmilisegundo = document.getElementById('milisegundo');
+
+var txtsegundo = document.getElementById('segundo');
+var txtmilissegundo = document.getElementById('milissegundo');
+
+var segundo = 0;
 
 
-    var segundo = 0;
-    var milissegundo = 0;
-    txtsegundo.innerHTML = segundo;
+    
    
-       
-    while(milissegundo < 60){
-        milissegundo++;
-        txtmilisegundo.innerHTML = milissegundo;
-
-    }
+     
+for(i=0; i<60; i++){
+    segundo = i;
+    txtsegundo.innerHTML += segundo; 
+    segundo = 0;
+    Window.setInterval(i, 1000);
 }
-setInterval(relogio, 1000);
+
+   
+
+
 
