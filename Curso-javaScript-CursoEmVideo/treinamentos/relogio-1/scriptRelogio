@@ -6,6 +6,7 @@ var txtdia = document.getElementById('txtdia');
 var txtmes = document.getElementById('txtmes');
 var txtano = document.getElementById('txtano');
 var txtsaudacao = document.getElementById('txtsaudacao');
+var txtdiasemana = document.getElementById('txtdiasemana');
 
 
     
@@ -22,6 +23,8 @@ const  relogio = setInterval(function time(){
     var hora = agora.getHours();
     var minuto = agora.getMinutes();
     var segundo = agora.getSeconds();
+   
+    
 
 
 
@@ -59,6 +62,33 @@ const  relogio = setInterval(function time(){
     }
     else{
         txtsaudacao.innerText =' Boa Noite!';
+    }
+    var diasemana = agora.getDay();
+    switch(diasemana){
+        case 0:
+        txtdiasemana.innerHTML= 'Domingo';
+        break;
+        case 1:
+        txtdiasemana.innerHTML= 'Segunda-Feira';
+        break;
+        case 2:
+        txtdiasemana.innerHTML= 'Terça-Feira';
+        break;
+        case 3:
+        txtdiasemana.innerHTML= 'Quarta-Feira';
+        break;
+        case 4:
+        txtdiasemana.innerHTML= 'Quinta-Feira';
+        break;
+        case 5:
+        txtdiasemana.innerHTML= 'Sexta-Feira';
+        break;
+        case 6:
+        txtdiasemana.innerHTML= 'Sábado';
+        break;
+        
+
+        
     }
 
    
