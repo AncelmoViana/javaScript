@@ -6,5 +6,8 @@ let amigo = {
         this.peso += p
     }
 }
+var num =5;
+num **=2;
+console.log(num)
 amigo.engordar(5);
 console.log(`${amigo.nome} pesa ${amigo.peso}`);
