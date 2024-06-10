@@ -3,11 +3,13 @@
 body{
   
     margin: 0;
+    background-color: black;
     background-image: url(planeta-terra.jpg);
-    background-position: center top;
+
    
 
-    height: 100vh;
+    min-width: 250px;
+    max-width: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +29,7 @@ body{
     left: -88%;
 }
 #hora, #minutos, #segundos{
-    position: absolute;
+    position: relative;
     width: 80px;
     height: 80px;
     
@@ -49,14 +51,14 @@ body{
    
 }
 #hora{
-    left: 110px;
+   
     
 }
 #minutos{
-    left: 50%;
+    
 }
 #segundos{
-    left: 410px;
+    
 }
 
 #saudacao{
