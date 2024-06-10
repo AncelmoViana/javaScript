@@ -11,76 +11,101 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     
     
 }
 
-#hora, #minutos, #segundos{
-    position: absolute;
-    width: 125px;
-    height: 125px;
+#relogio{
+    position:  relative;
+    display: flex;
     align-items: center;
     justify-content: center;
+    
+    color: rgba(197, 190, 190, 0.326);
+    top: -20%;
+    left: -88%;
+}
+#hora, #minutos, #segundos{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6em;
-    color: #d1cfd0;
-    text-shadow: 2px 3px 4px rgba(0, 0, 255, 0.386);
-    border: 1px solid #e2dde1;
+    font-size: 10em;
+    align-items: center;
+    justify-content: center;
+    color: rgba(197, 190, 190, 0.628);
+    top: 195px;;
+    justify-content: center;
+    border: 1px solid rgba(197, 190, 190, 0.628);
     padding: 20px;
     margin: 10px;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.616);
-    background-color: rgba(0, 0, 0, 0.559);
+    background-color: rgba(0, 0, 0, 0.493);
     border-radius: 10px;
     
+ 
+   
 }
 #hora{
-    left: 150px;
-
-} 
-#minutos{
-    left: 350px;
-
-} 
-#segundos{
-    left: 550px;
-
+    left: 110px;
+    
 }
-
+#minutos{
+    left: 50%;
+}
+#segundos{
+    left: 410px;
+}
 
 #saudacao{
     width: 290px;
-    height: 15px;
+    height: 20px;
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5em;
+    font-size: 4em;
     font-weight: bold;
     position: absolute;
-    top: 5px;
-    color: #d1cfd0;
+    top:30px;
+    left: 175px;
+    color: rgba(197, 190, 190, 0.628);
     padding: 30px;
-    border-radius: 10px;
-    text-shadow: 2px 3px 4px rgba(0, 0, 255, 0.386);
-  
-    
+ 
+ 
+   
 }
 #txtdia::after, #txtmes::after{
     content: '/';
-    text-shadow: 2px 3px 4px rgba(0, 0, 255, 0.386);
+}
+#txtdia{
+    position: absolute;
+    left: 80px;
+}
 
+#txtmes{
+    position: absolute;
+    left: 125px;
 
 }
-#txtsaudacao{
+
+#txtano{
     position: absolute;
-    top: -2px;
-    padding-bottom: 20px;
+    left: 170px;
     
 }
-#txtdiasemana{
-    position: absolute;
-    top: 50px;
-
+#txtsaudacao{
+    position: relative;
+    top: -30px;
+    left: -20px;
+ 
 }
 
+#txtdiasemana{
+    position: relative;
+    top: 10px;
+    left: -20px;
 
 
 
+}
