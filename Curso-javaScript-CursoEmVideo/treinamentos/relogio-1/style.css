@@ -4,7 +4,8 @@ body{
   
     margin: 0;
     background-image: url(planeta-terra.jpg);
-    background-size: cover;
+    background-position: center top;
+   
 
     height: 100vh;
     display: flex;
@@ -13,17 +14,13 @@ body{
     
     
 }
-div{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 500px;
-}
 
 #hora, #minutos, #segundos{
-    
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 6em;
@@ -37,6 +34,20 @@ div{
     border-radius: 10px;
     
 }
+#hora{
+    left: 150px;
+
+} 
+#minutos{
+    left: 350px;
+
+} 
+#segundos{
+    left: 550px;
+
+}
+
+
 #saudacao{
     width: 290px;
     height: 15px;
